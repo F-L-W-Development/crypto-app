@@ -35,15 +35,15 @@ function App() {
   return (
     <>
     <div className="hero min-h-screen bg-base-200 flex flex-col">
-      <div className="hero-content text-center">
+      <div className="hero-content text-center pt-10 p-0">
         <div className="max-w-7xl flex items-center">
-          <img src={bitcoin} alt="" className='h-24 w-24 p-5' />
-          <h1 className="text-4xl font-bold py-10">TRACK YOUR CRYPTO CURRENCIES</h1>
-          <img src={bitcoin} alt="" className='h-24 w-24 p-5' />
+          <img src={bitcoin} alt="" className='h-24 w-24 p-5 xs:hidden md:flex' />
+          <h1 className="text-4xl font-bold">TRACK YOUR CRYPTO CURRENCIES</h1>
+          <img src={bitcoin} alt="" className='h-24 w-24 p-5 xs:hidden md:flex' />
         </div>
       </div>
 
-      <input type="text" placeholder="Type here" className="input w-full max-w-xs my-10 bg-neutral-content" onChange={handleChange}/>
+      <input type="text" placeholder="Type here" className="input w-full max-w-xs my-10 bg-neutral-content text-base-100 " onChange={handleChange}/>
 
       <div className="max-w-7xl overflow-x-auto">
         <table className="table ">
